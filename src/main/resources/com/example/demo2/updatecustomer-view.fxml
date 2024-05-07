@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.UpdateCustomerController">
+        <children>
+            <TextField fx:id="NameField" layoutX="274.0" layoutY="79.0" />
+            <TextField fx:id="PassportField" layoutX="274.0" layoutY="128.0" />
+            <TextField fx:id="PhoneField" layoutX="274.0" layoutY="178.0" />
+            <TextField fx:id="ResidencyField" layoutX="274.0" layoutY="228.0" />
+            <Text layoutX="177.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <Text layoutX="177.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passport" wrappingWidth="53.291015625" />
+            <Text layoutX="177.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+            <Text layoutX="177.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Residency" />
+            <Button layoutX="177.0" layoutY="302.0" mnemonicParsing="false" onAction="#Submit" prefHeight="48.0" prefWidth="96.0" text="Submit" />
+            <Button layoutX="327.0" layoutY="302.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="48.0" prefWidth="96.0" text="Cancel" />
+            <Text fill="RED" layoutX="189.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a Customer">
+                <font>
+                    <Font size="31.0" />
+                </font>
+            </Text>
+        </children>
+    </AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.AddcustomerViewController">
+   <children>
+      <TextField fx:id="NameField" layoutX="199.0" layoutY="78.0" />
+      <TextField fx:id="PassportField" layoutX="199.0" layoutY="127.0" />
+      <TextField fx:id="PhoneField" layoutX="199.0" layoutY="177.0" />
+      <TextField fx:id="ResidencyField" layoutX="199.0" layoutY="227.0" />
+      <Text layoutX="102.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="102.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passport" wrappingWidth="53.291015625" />
+      <Text layoutX="102.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+      <Text layoutX="102.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Residency" />
+      <Button layoutX="107.0" layoutY="317.0" mnemonicParsing="false" onAction="#Submit" prefHeight="48.0" prefWidth="96.0" text="Submit" />
+      <Button layoutX="252.0" layoutY="317.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="48.0" prefWidth="96.0" text="Cancel" />
+      <Text fill="RED" layoutX="118.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a Customer">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="DatePKRReservation" layoutX="199.0" layoutY="270.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="83.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Reservation" />
+   </children>
+</AnchorPane>

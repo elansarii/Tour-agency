@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.TourViewController">
+   <children>
+      <BorderPane layoutX="22.0" layoutY="53.0" prefHeight="294.0" prefWidth="822.0">
+         <center>
+            <TableView fx:id="TourTable" prefHeight="294.0" prefWidth="689.0" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="Tour_IDCol" prefWidth="94.0" text="Tour_ID" />
+                  <TableColumn fx:id="StartTimeCol" prefWidth="97.0" text="StartTime" />
+                  <TableColumn fx:id="DestinationCol" prefWidth="91.0" text="Destination" />
+                  <TableColumn fx:id="PriceCol" prefWidth="59.0" text="Price" />
+                  <TableColumn fx:id="Tour_DateCol" prefWidth="107.0" text="Tour_Date" />
+                  <TableColumn fx:id="DurationCol" prefWidth="87.0" text="Duration" />
+                  <TableColumn fx:id="LocationCol" prefWidth="95.0" text="Location" />
+                  <TableColumn fx:id="SiteNameCol" prefWidth="83.0" text="Site Name" />
+                  <TableColumn fx:id="GuideNameCol" prefWidth="108.0" text="Guide Name" />
+               </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+      <Button layoutX="22.0" layoutY="353.0" mnemonicParsing="false" onAction="#Back2Previous" text="Previous Window" />
+   </children>
+</AnchorPane>

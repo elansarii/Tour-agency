@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="533.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.CustomerViewController">
+   <children>
+      <BorderPane layoutX="106.0" layoutY="51.0" prefHeight="431.0" prefWidth="627.0">
+         <center>
+            <TableView fx:id="tableView" prefHeight="275.0" prefWidth="563.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="CustomerIDLV" prefWidth="125.0" text="ID" />
+                <TableColumn fx:id="NameLV" prefWidth="125.0" text="Name" />
+                  <TableColumn fx:id="PassportLV" prefWidth="125.0" text="Passport" />
+                  <TableColumn fx:id="ResidencyLV" prefWidth="125.0" text="Residency" />
+                  <TableColumn fx:id="PhoneLV" prefWidth="125.0" text="Phone" />
+              </columns>
+            </TableView>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="117.0" prefWidth="627.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="50.0" prefWidth="110.0" text="Add Customer" />
+                  <Button layoutX="147.0" layoutY="23.0" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="50.0" prefWidth="116.0" text="Update Customer" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <top>
+            <AnchorPane prefHeight="39.0" prefWidth="627.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by ID" />
+                  <TextField fx:id="IDTextBox" layoutX="91.0" layoutY="2.0" prefHeight="25.0" prefWidth="102.0" />
+                  <Button layoutX="206.0" layoutY="2.0" mnemonicParsing="false" onAction="#SearchByID" prefHeight="25.0" prefWidth="99.0" text="Search" />
+                  <Button layoutX="314.0" layoutY="1.0" mnemonicParsing="false" onAction="#deleteCustomer" prefHeight="27.0" prefWidth="106.0" text="Delete Customer" />
+                  <Button layoutX="589.0" layoutY="2.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="25.0" prefWidth="38.0" text="🔁" />
+
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+      <Button layoutX="117.0" layoutY="482.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="27.0" prefWidth="170.0" text="Back To Main Menu" />
+   </children>
+</AnchorPane>
